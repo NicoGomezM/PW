@@ -128,8 +128,8 @@
         }
 
         #logo {
-            height: 70px; /* Ajusta la altura según sea necesario */
-            width: auto; /* Mantiene la proporción de la imagen */
+            height: 70px;
+            width: auto; 
         }
 
         #contact {
@@ -137,24 +137,41 @@
         }
 
         .no-style-link {
-            color: inherit; /* Hereda el color del elemento padre */
+            color: inherit; 
         }
 
         .responsive-image {
-            width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
-            height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
-            max-width: 100%; /* Asegura que la imagen no se expanda más allá de su tamaño original */
+            width: 100%; 
+            height: auto; 
+            max-width: 100%;
         }
 
         .social-icon {
-            width: 32px; /* Ajusta el tamaño según tus necesidades */
-            height: auto; /* Mantiene la proporción de la imagen */
-            margin-right: 10px; /* Espacio entre las imágenes */
-            vertical-align: middle; /* Alinea verticalmente las imágenes */
+            width: 32px;  
+            height: auto; 
+            margin-right: 10px;  
+            vertical-align: middle;
+        }
+
+        .document-icon {
+            width: 100px; 
+            height: auto; 
+        }
+
+        .curriculums {
+            display: flex; 
+            justify-content: center; 
+            gap: 20px; 
+        }
+
+        .curriculum-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
         }
 
         a {
-            text-decoration: none; /* Elimina la línea de enlace */
+            text-decoration: none; 
         }
     </style>
 </head>
@@ -171,6 +188,7 @@
                     <li><a href="#skills">Habilidades</a></li>
                     <li><a href="#experience">Experiencia</a></li>
                     <li><a href="#education">Educación</a></li>
+                    <li><a href="#curriculums">Curriculums</a></li>
                     <li><a href="#contact">Contacto</a></li>
                 </ul>
             </nav>
@@ -184,7 +202,7 @@
         </div>
     </section>
 
-    <!-- Agregar curriculums - malla hasta donde llevo - certificados - qr curriculum - carta solicitud -  -->
+    <!-- Agregar curriculums - malla hasta donde llevo - certificados - qr curriculum - carta solicitud -->
 
     <div class="container">
         <section id="skills" class="section">
@@ -200,9 +218,9 @@
                 <li>Habilidad en el uso de herramientas de ofimática como Word, Excel y PowerPoint</li>
                 <li>Capacidad para realizar reparaciones y mejoras en elementos de hardware</li>
                 <li>Fuerte habilidad para trabajar en equipo y comunicación efectiva</li>
-                <li><a href="Certificado.pdf" class="no-style-link">Certificación</a> en la Administración y atención al Cliente</li>
+                <li><a href="Certificado.pdf" target="_blank" class="no-style-link">Certificación</a> en la Administración y atención al Cliente</li>
             </ul>
-            Como estudiante de la Universidad del Bio Bio, he completado más del 50% de mi <a href="MallaIcinf.png" class="no-style-link">malla curricular</a> . Por lo tanto, puedo afirmar que tengo un manejo básico de las materias detalladas en la siguiente imagen hasta el séptimo semestre:
+            Como estudiante de la Universidad del Bio Bio, he completado más del 50% de mi <a href="MallaIcinf.png" target="_blank" class="no-style-link">malla curricular</a> . Por lo tanto, puedo afirmar que tengo un manejo básico de las materias detalladas en la siguiente imagen hasta el séptimo semestre:
             
             <img src="MallaIcinf.png" alt="Malla Curricular" class="responsive-image">
         </section>
@@ -259,6 +277,24 @@
             <div class="education">
                 <h3>Básica</h3>
                 <p>Escuela Pedro Ruiz Aldea E-885, 2009 - 2014</p>
+            </div>
+        </section>
+
+        <section id="Curriculums" class="section">
+            <h2>Curriculums</h2>
+            <div class="curriculums">
+                <div class="curriculum-item">
+                    <h3>Curriculum Formal</h3>
+                    <a href="curri/CV.pdf" target="_blank">
+                        <img src="curri/cv.png" alt="Curriculum" class="document-icon">
+                    </a>
+                </div>
+                <div class="curriculum-item" >
+                    <h3>Curriculum Informal</h3>
+                    <a href="curri/CVInfor.pdf" target="_blank">
+                        <img src="curri/cvinf.png" alt="Curriculum" class="document-icon">
+                    </a>
+                </div>
             </div>
         </section>
         
