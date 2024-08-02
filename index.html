@@ -7,6 +7,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <title>Presentación Profesional</title>
     <style>
+        html {
+            scroll-behavior: smooth; /* Habilita el desplazamiento suave */
+        }
+
         body {
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             margin: 0;
@@ -18,13 +22,14 @@
             background-attachment: fixed; /* Hace que la imagen de fondo permanezca fija */
             background-color: #090225de;
         }
+
         .container {
             font-size: 20px;
             width: 80%;
             margin: auto;
             overflow: hidden;
         }
-        
+
         header {
             background: #333333;
             color: #fff;
@@ -36,7 +41,6 @@
             align-items: center; /* Centra el contenido verticalmente */
         }
 
-
         h7 {
             font-size: 50px;
             color: #ffffff;
@@ -47,13 +51,18 @@
             color: #ffffff;
             text-decoration: none;
             text-transform: uppercase;
-            font-size: 1rem; 
-            font-family: 'Roboto', sans-serif; 
+            font-size: 1rem;
+            font-family: 'Roboto', sans-serif;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
 
         @media (max-width: 600px) {
             header a {
-                font-size: 0.875rem; 
+                font-size: 0.875rem;
+                white-space: normal;
+                word-wrap: break-word;
             }
         }
 
@@ -81,15 +90,15 @@
         }
 
         .section:last-child {
-            border-bottom: none; 
+            border-bottom: none;
         }
 
         .section h2 {
-            font-weight: bold; 
-            text-decoration: underline; 
+            font-weight: bold;
+            text-decoration: underline;
             margin-bottom: 10px;
         }
-        
+
         section {
             padding: 20px 0;
             color: #fdf1f1;
@@ -100,42 +109,50 @@
             list-style: none;
             display: flex;
             gap: 20px;
-            justify-content: center; 
-            align-items: center; 
+            justify-content: center;
+            align-items: center;
         }
 
         header li {
             display: inline;
         }
+
         #branding {
             display: flex;
             align-items: center;
         }
+
         #branding h1 {
             margin: 0;
             margin-left: 10px;
         }
+
         #logo {
             height: 70px; /* Ajusta la altura según sea necesario */
             width: auto; /* Mantiene la proporción de la imagen */
         }
+
         #contact {
             text-align: center;
         }
+
         .no-style-link {
             color: inherit; /* Hereda el color del elemento padre */
         }
+
         .responsive-image {
             width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
             height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
             max-width: 100%; /* Asegura que la imagen no se expanda más allá de su tamaño original */
         }
+
         .social-icon {
             width: 32px; /* Ajusta el tamaño según tus necesidades */
             height: auto; /* Mantiene la proporción de la imagen */
             margin-right: 10px; /* Espacio entre las imágenes */
             vertical-align: middle; /* Alinea verticalmente las imágenes */
         }
+
         a {
             text-decoration: none; /* Elimina la línea de enlace */
         }
