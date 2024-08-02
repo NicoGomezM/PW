@@ -114,6 +114,23 @@
         #contact {
             text-align: center;
         }
+        .no-style-link {
+            color: inherit; /* Hereda el color del elemento padre */
+        }
+        .responsive-image {
+            width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+            height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
+            max-width: 100%; /* Asegura que la imagen no se expanda más allá de su tamaño original */
+        }
+        .social-icon {
+            width: 32px; /* Ajusta el tamaño según tus necesidades */
+            height: auto; /* Mantiene la proporción de la imagen */
+            margin-right: 10px; /* Espacio entre las imágenes */
+            vertical-align: middle; /* Alinea verticalmente las imágenes */
+        }
+        a {
+            text-decoration: none; /* Elimina la línea de enlace */
+        }
     </style>
 </head>
 
@@ -129,7 +146,6 @@
                     <li><a href="#skills">Habilidades</a></li>
                     <li><a href="#experience">Experiencia</a></li>
                     <li><a href="#education">Educación</a></li>
-                    <li><a href="#projects">Proyectos</a></li>
                     <li><a href="#contact">Contacto</a></li>
                 </ul>
             </nav>
@@ -159,29 +175,48 @@
                 <li>Habilidad en el uso de herramientas de ofimática como Word, Excel y PowerPoint</li>
                 <li>Capacidad para realizar reparaciones y mejoras en elementos de hardware</li>
                 <li>Fuerte habilidad para trabajar en equipo y comunicación efectiva</li>
+                <li><a href="Certificado.pdf" class="no-style-link">Certificación</a> en la Administración y atención al Cliente</li>
             </ul>
+            Como estudiante de la Universidad del Bio Bio, he completado más del 50% de mi <a href="MallaIcinf.png" class="no-style-link">malla curricular</a> . Por lo tanto, puedo afirmar que tengo un manejo básico de las materias detalladas en la siguiente imagen hasta el séptimo semestre:
+            
+            <img src="MallaIcinf.png" alt="Malla Curricular" class="responsive-image">
         </section>
     
         <section id="experience" class="section">
             <h2>Experiencia Laboral</h2>
             <div class="experience">
-                <h3>Desarrollador de Software en Empresa XYZ</h3>
-                <p>Junio 2018 - Presente</p>
+                <h3>Practicante en Laboratorio CIMUBB</h3>
+                <p>Junio 2023 - Diciembre 2023</p>
                 <p>Responsabilidades:</p>
                 <ul>
-                    <li>Desarrollo y mantenimiento de aplicaciones web</li>
-                    <li>Colaboración con equipos multidisciplinarios</li>
-                    <li>Implementación de nuevas funcionalidades</li>
+                    <li>Aprendizaje autónomo y guiado de el uso de Python en distintos entornos</li>
+                    <li>Colaboración con compañero para desarrollo de un proyecto</li>
+                    <li>Creación de documentación tipo tutoriales para el estudio de nuevos practicantes</li>
+                    <li>Mejora de tutoriales desarrollados por practicantes previos a nuestro grupo</li>
                 </ul>
             </div>
             <div class="experience">
-                <h3>Practicante en Empresa ABC</h3>
-                <p>Enero 2017 - Mayo 2018</p>
+                <h3>Desarrollador Proyecto Particular Laboratorio CIMUBB</h3>
+                <p>Diciembre 2023 - Agosto 2024</p>
                 <p>Responsabilidades:</p>
                 <ul>
-                    <li>Soporte en el desarrollo de software</li>
-                    <li>Pruebas y depuración de aplicaciones</li>
-                    <li>Documentación de procesos</li>
+                    <li>Desarrollo de Prototipo: Construcción de un dispositivo prototipo para el muestreo de datos.</li>
+                    <li>Programación: Desarrollo del código necesario para el funcionamiento del dispositivo, incluyendo las tareas de muestreo y almacenamiento de datos.</li>
+                    <li>Gestión de Datos: Almacenamiento de datos tanto en una tarjeta SD extraíble como en una hoja de cálculo de Google DataSheet.</li>
+                    <li>Interfaz de Datos: Creación de una interfaz gráfica para la visualización y análisis de los datos recolectados.</li>
+                    <li>Documentación Técnica: Elaboración de documentación de uso del dispositivo en formato de tutorial.</li>
+                    <li>Documentación de Procesos: Registro y documentación detallada de todos los procesos involucrados en el desarrollo del proyecto.</li>
+                </ul>
+            </div>
+            <div class="experience">
+                <h3>Técnico en hardware</h3>
+                <p>Diciembre 2020 - Actualidad</p>
+                <p>Responsabilidades:</p>
+                <ul>
+                    <li>Actualización de software y hardware en equipos informáticos para la mejora de rendimiento.</li>
+                    <li>Reparación de equipos informáticos y dispositivos electrónicos.</li>
+                    <li>Instalación de sistemas operativos y programas en equipos informáticos.</li>
+                    <li>Construcción de computadoras de escritorio</li>
                 </ul>
             </div>
         </section>
@@ -189,30 +224,37 @@
         <section id="education" class="section">
             <h2>Educación</h2>
             <div class="education">
-                <h3>Ingeniería en Sistemas Computacionales</h3>
-                <p>Universidad de Ejemplo, 2013 - 2017</p>
+                <h3>Ingeniería Civil en Informática</h3>
+                <p>Universidad del Bio Bio, 2021 - Actualidad</p>
             </div>
-        </section>
-    
-        <section id="projects" class="section">
-            <h2>Proyectos</h2>
-            <div class="projects">
-                <h3>Proyecto 1</h3>
-                <p>Descripción del proyecto 1.</p>
+            <div class="education">
+                <h3>Media</h3>
+                <p>Liceo bicentenario A-59, 2015 - 2020</p>
             </div>
-            <div class="projects">
-                <h3>Proyecto 2</h3>
-                <p>Descripción del proyecto 2.</p>
+            <div class="education">
+                <h3>Básica</h3>
+                <p>Escuela Pedro Ruiz Aldea E-885, 2009 - 2014</p>
             </div>
         </section>
         
         <section id="contact" class="section">
             <h2>Contacto</h2>
             <div class="contact-info">
-                <p>Email: tuemail@example.com</p>
-                <p>Teléfono: +123 456 7890</p>
-                <p><a href="https://www.linkedin.com/in/tuperfil">LinkedIn</a></p>
+                <p>Email: nicogomezmorgado86@gmail.com</p>
+                <p>Teléfono: +56 971090888</p>
+                <p>
+                    <a href="https://www.linkedin.com/in/nicol%C3%A1s-g%C3%B3mez-morgado-3697691a5/">
+                        <img src="cntct/linkedin.png" alt="LinkedIn" class="social-icon">
+                    </a>
+                    <a href="https://wa.me/qr/PCI4NQ4QHOYYK1 ">
+                        <img src="cntct/whatsapp.png" alt="WhatsApp" class="social-icon">
+                    </a>
+                    <a href="https://github.com/NicoGomezM">
+                        <img src="cntct/github.png" alt="GitHub" class="social-icon">
+                    </a>
+                </p>
             </div>
+            
         </section>
     </div>
 </body>
