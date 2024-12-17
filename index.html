@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -7,203 +8,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Gill+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="output.css" rel="stylesheet">
     <title>Presentación Profesional</title>
-    <style>
-        html {
-            scroll-behavior: smooth; /* Habilita el desplazamiento suave */
-        }
-
-        body {
-            font-family: 'Nunito', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-image: url('pxfuel.jpg'); /* Reemplaza con la ruta de tu imagen */
-            background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
-            background-position: center; /* Centra la imagen en el fondo */
-            background-repeat: no-repeat; /* Evita que la imagen se repita */
-            background-attachment: fixed; /* Hace que la imagen de fondo permanezca fija */
-            background-color: #090225de;
-        }
-
-        .container {
-            font-size: 20px;
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-
-        header {
-            background: #0201298a;
-            color: #fff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #77aaff 3px solid;
-            display: flex;
-            justify-content: center; 
-            align-items: center; 
-        }
-
-        h7 {
-            font-size: 50px;
-            color: #ffffff;
-            text-align: center;
-        }
-
-        header a {
-            color: #ffffff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 1rem;
-            font-family: 'Calibri', sans-serif;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-
-        header a:hover {
-            font-weight: bold;
-            font-style: oblique;
-        }
-
-        @media (max-width: 600px) {
-            header a {
-                font-size: 0.875rem;
-                white-space: normal;
-                word-wrap: break-word;
-            }
-        }
-
-        .showcase {
-            min-height: 200px;
-            text-align: center;
-            color: #ffffff;
-        }
-
-        .container h1 {
-            font-size: 35px;
-            line-height: 1.5;
-            margin-top: 50px;
-        }
-
-        .container p {
-            font-size: 20px;
-        }
-
-        .section {
-            border-bottom: 3px solid #0bffde;
-            padding-bottom: 20px;
-            margin-bottom: 20px;
-        }
-
-        .section:last-child {
-            border-bottom: none;
-        }
-
-        .section h2 {
-            font-weight: bold;
-            text-decoration: underline;
-            margin-bottom: 10px;
-        }
-
-        section {
-            padding: 5px 0;
-            color: #fdf1f1;
-        }
-
-        header ul {
-            padding: 0;
-            list-style: none;
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            align-items: center;
-        }
-
-        header li {
-            display: inline;
-        }
-
-        #branding {
-            display: flex;
-            align-items: center;
-        }
-
-        #branding h1 {
-            margin: 0;
-            margin-left: 10px;
-        }
-
-        #logo {
-            height: 70px;
-            width: auto; 
-        }
-
-        #contact {
-            text-align: center;
-        }
-
-        .no-style-link {
-            color: inherit; 
-            text-decoration: underline;
-        }
-
-        .responsive-image {
-            display: block; 
-            margin-left: auto; 
-            margin-right: auto; 
-            width: 100%; 
-            height: auto; 
-            max-width: 100%;
-        }
-
-        .social-icon {
-            width: 32px;  
-            height: auto; 
-            margin-right: 10px;  
-            vertical-align: middle;
-        }
-
-        .document-icon {
-            width: 100px; 
-            height: auto; 
-        }
-
-        .curriculums {
-            display: flex; 
-            justify-content: center; 
-            gap: 20px; 
-        }
-
-        .curriculum-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center; 
-        }
-
-        a {
-            text-decoration: none; 
-        }
-    </style>
 </head>
 
 <body>
+    
     <header>
-        <div class="container">
-            <div id="branding">
-                <img src="logoNGMFormal_sinF.png" alt="Logo" id="logo">
-                <h7>Nicolás Jesús Gómez Morgado</h7>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#skills">Habilidades</a></li>
-                    <li><a href="#experience">Experiencia</a></li>
-                    <li><a href="#education">Educación</a></li>
-                    <li><a href="#curriculums">Curriculums</a></li>
-                    <li><a href="#contact">Contacto</a></li>
-                </ul>
-            </nav>
+        <div id="branding">
+            <img src="logoNGMFormal_sinF.png" alt="Logo" id="logo">
+            <h7>Nicolás Jesús Gómez Morgado</h7>
         </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#experience">Experiencia</a></li>
+                <li><a href="#education">Educación</a></li>
+                <li><a href="#curriculums">Curriculums</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
+    
+    
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('header nav');
+            nav.classList.toggle('active');
+        }
+    </script>
+    
+    
 
     <section class="showcase">
         <div class="container">
@@ -312,7 +152,7 @@
             <h2>Contacto</h2>
             <div class="contact-info">
                 <p>Email: nicogomezmorgado86@gmail.com</p>
-                <p>Teléfono: +56 971090888</p>
+                <p>Teléfono: +56 9 71090888</p>
                 <p>
                     <a href="https://www.linkedin.com/in/nicol%C3%A1s-g%C3%B3mez-morgado-3697691a5/">
                         <img src="cntct/linkedin.png" alt="LinkedIn" class="social-icon">
