@@ -588,8 +588,36 @@ video {
   }
 }
 
+.fixed {
+  position: fixed;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-green-500 {
+  --tw-text-opacity: 1;
+  color: rgb(34 197 94 / var(--tw-text-opacity, 1));
+}
+
+.text-orange-500 {
+  --tw-text-opacity: 1;
+  color: rgb(249 115 22 / var(--tw-text-opacity, 1));
+}
+
 html {
   scroll-behavior: smooth;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -602,6 +630,310 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-color: #090225de;
+}
+
+.b-head-decor{
+  display:none
+}
+
+.b-page_newyear .b-head-decor{
+  position:absolute;
+  z-index: 9999;
+  /*fix by Ð&amp;#144;Ð&amp;#189;Ð&amp;#189;Ð&amp;#176;*/
+  top:0;
+  left:0;
+  display:block;
+  height:115px;
+  width:100%;
+  overflow:hidden;
+  background:url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisiIECFImtvAtp4S6mj77OBR7haafC2YZHM6JMA6mbritJNXC0VvJe7AZPnTPv-YM2oOwqXssB-JeZSPq_DqRjOWfIozRq-QnTa3Y5AJ5TfHVWNF_MEx74M1iNmyd5PR4aIBBSb14s_vI/s1600/el.png) repeat-x 0 0
+}
+
+.b-page_newyear .b-head-decor__inner{
+  position:absolute;
+  top:0;
+  left:0;
+  height:115px;
+  display:block;
+  width:373px
+}
+
+.b-page_newyear .b-head-decor::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -115px;
+  left: 0;
+  z-index: 3;
+  height: 115px;
+  width: 100%;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.75);
+}
+
+.b-page_newyear .b-head-decor__inner_n2{
+  left:373px
+}
+
+.b-page_newyear .b-head-decor__inner_n3{
+  left:746px
+}
+
+.b-page_newyear .b-head-decor__inner_n4{
+  left:1119px
+}
+
+.b-page_newyear .b-head-decor__inner_n5{
+  left:1492px
+}
+
+.b-page_newyear .b-head-decor__inner_n6{
+  left:1865px
+}
+
+.b-page_newyear .b-head-decor__inner_n7{
+  left:2238px
+}
+
+.b-ball{
+  position:absolute
+}
+
+.b-ball_n1{
+  top:0;
+  left:3px;
+  width:59px;
+  height:83px
+}
+
+.b-ball_n2{
+  top:-19px;
+  left:51px;
+  width:55px;
+  height:70px
+}
+
+.b-ball_n3{
+  top:9px;
+  left:88px;
+  width:49px;
+  height:67px
+}
+
+.b-ball_n4{
+  top:0;
+  left:133px;
+  width:57px;
+  height:102px
+}
+
+.b-ball_n5{
+  top:0;
+  left:166px;
+  width:49px;
+  height:57px
+}
+
+.b-ball_n6{
+  top:6px;
+  left:200px;
+  width:54px;
+  height:70px
+}
+
+.b-ball_n7{
+  top:0;
+  left:240px;
+  width:56px;
+  height:67px
+}
+
+.b-ball_n8{
+  top:0;
+  left:283px;
+  width:54px;
+  height:53px
+}
+
+.b-ball_n9{
+  top:10px;
+  left:321px;
+  width:49px;
+  height:66px
+}
+
+.b-ball_n1 .b-ball__i{
+  background:url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEha4XRSkh5HyyECJPW0Sk5itXvxHm8FNm-GKAH6vOOMFcGPmgcz4L1kMOhznqGhzZaQNmVd2fFur9acYncswQrZFdijAHfPLmUQRQHsIS-YbEDhKtHUX_WbAzprpm6iZQ4GJvZ-vvvdPY4/s1600/b-ball_n1.png) no-repeat
+}
+
+.b-ball_n2 .b-ball__i{
+  background:url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXEznWTb0WgsgI2lt2ZlX9UyKP4bRThDZzr-IxY-ngJmltQD7cP99eakMSoHh8FtxFJkEEztSttGMmfBTJ4gkeYaIfqIreVE68T2EMZYpYBo6pEu7XpVzciibY5uOOlWr1FtLDbTTY09Y/s1600/b-ball_n2.png) no-repeat
+}
+
+.b-ball_n3 .b-ball__i{
+  background:url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjGfYVA_EEUQ8d2iNMDJ7lTBRqm6uI3G7Bp0Xz7XTkDCwQ57cM94HfLIdYvfv4YbLpit8sJHRof6wpb8gbggewdk6IMsqZ0RfMG5-jU9aMk0O0qUGapwFsN3TBi83qNhxfEho4MXMrLGkY/s1600/b-ball_n3.png) no-repeat
+}
+
+.b-ball_n4 .b-ball__i{
+  background:url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmw7LiX13KXMSGC8qpp-vU7Pfg7DiCQvThNPJob-IuxUOYque-y04ldYEKb1h4-Olj1X6ZjdY64Yy9BaKy1FoZxXlHod-nVt16Yn4WcibsU-UCHTyqXQp2Uf0uQ0VpIsuQpIPp8eW84Iw/s1600/b-ball_n4.png) no-repeat
+}
+
+.b-ball_n5 .b-ball__i{
+  background:url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgk6KaV0UKhGHePRPyHeDRNVL9EgPPXDDtq2RYJUoEKgbmOtqkELfG_aAMtBM98pH31hY3uBXw4Z1iZpbTY1_3NeKMkWZ3irIj7lI7SVLJWRbQOW7-AyJhODPkzhqAJldeMdFGWGufP49U/s1600/b-ball_n5.png) no-repeat
+}
+
+.b-ball_n6 .b-ball__i{
+  background:url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-CR8vuU31RLVTRXf63KrS7pKmWRhhSXBKAwThOz8seJHYjPW89B0I3xZtAJNOgFK1Pf13d_NGwvyN1Dr-n1zauuAEDENWJqWqOitDfEOujvkpKBWn4U9G0gklF0_nxU8un-Pl1PT4ubw/s1600/b-ball_n6.png) no-repeat
+}
+
+.b-ball_n7 .b-ball__i{
+  background:url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8n0zl2DcS_kPOVsnyxC9F7e0Mj38QrqOT4eNEu23K-coLTfPhsp9VurG8OfQfS7Xlt7JlDQRhcrQu3q6bld9ebEZ0mR5kQT33dYN9NgnK-o6nUMiHt9gvPRh3rO0QwvjVqIm54tLyeuU/s1600/b-ball_n7.png) no-repeat
+}
+
+.b-ball_n8 .b-ball__i{
+  background:url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiaLFz-dPgO4wibS7ywaYyMWTewu99QRXue4x8h7VBBbWBOGTrGILK19Zquy_aeGi9uTjPvulCzD8jK9u5IyG-9TVdxaUXQcvIlzGGHVBZ7A7nc_OL14lJH54mEcAW3QDmpCSYklkTTfLE/s1600/b-ball_n8.png) no-repeat
+}
+
+.b-ball_n9 .b-ball__i{
+  background:url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAbwcYu9iVr4Q6ycf74LHPr9BE32wAh0z9sVocCcpWGxT-icz-a70-TAWN-tRkY63TiQJW4XF22Udm6H72Hdk_61rcvisedgn5h1p1TIGvKRxMhTMbm6sAIsMo8Fjo8YGYhhDrx6CJtgc/s1600/b-ball_n9.png) no-repeat
+}
+
+.b-ball_i1 .b-ball__i{
+  background:url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpFc9wiVIjcYnTtzqTz_NrpuRkVypZP2hkFwHZP8T_cDTSdcP2Rg4pEuXBAnzVTOg4tO76GJsteApNZPr-Aii2h0f6hLHZOMFCgcCECsj-N31Q9o9K4QEdqCrcujXfK0dLuI9sdv-OTVU/s1600/b-ball_i1.png) no-repeat
+}
+
+.b-ball_i2 .b-ball__i{
+  background:url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibRrZ7yRWgkBacEudXNjD7p_HyS4y2qgkgBju-7mqje4Q-0pON8_5s-Vf-VTafqshcVLCAZPqb-CRGUTd_gvven-QqPwWeb_hSy9ywZgkwyaQjht57LqWEsDRhQHx5ioM8lBkCXPLTDUA/s1600/b-ball_i2.png) no-repeat
+}
+
+.b-ball_i3 .b-ball__i{
+  background:url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhVJZDF4rhxvuBbLKKV_Y9eKGcjRD_hyQqdLUsgRIiChk0AJ-alghnmIyhyphenhyphenI6rBUft42b2qlxaQp0Sj33YtoMd4HWV7B49LkOEUMFjtNM1ov_Q2tkb5vZ5r2h7KU4kSmZP6DLv5H4b12lQ/s1600/b-ball_i3.png) no-repeat
+}
+
+.b-ball_i4 .b-ball__i{
+  background:url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjIqTT2jfKumhIJMe337n4vgOI1mYzoC6Au5EEEy-DdKIeYeTF-k1HZrZbG63WBJLrOjG_qwomBeb3hMJ894XiL-9tigqePl26zd-miRG8gR-3Hif4SQ8bQNLzquMzFBeYAPo7_Qiol4IY/s1600/b-ball_i4.png) no-repeat
+}
+
+.b-ball_i5 .b-ball__i{
+  background:url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjiDtEix4AC37XuWKX0jqdFeLH6SLQI1zNGsMGbaUeB2F1WLE2C3CqPjukeM5ojIvjV8K5t6govpaXR5YgY1NNkvHcnxv5uB0al_HoiCHDDt2_XBamfyaALSQp4FARgcMPv8pTsSgHXk6w/s1600/b-ball_i5.png) no-repeat
+}
+
+.b-ball_i6 .b-ball__i{
+  background:url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg0Z-zyDuOhhXpOrl0gAUo0nMm3Ta128JuZFaWpcfvGVjcjqCVzTzQ4pn2wdIq8D39RK5YXiKtRWsE6dhHaE7WuGQvw0KOCn7qjjFcZj0dW7WLzW6mDIsjzZ__LU-aUCKEFqRvOuRUtdSA/s1600/b-ball_i6.png) no-repeat
+}
+
+.b-ball_i1{
+  top:0;
+  left:0;
+  width:25px;
+  height:71px
+}
+
+.b-ball_i2{
+  top:0;
+  left:25px;
+  width:61px;
+  height:27px
+}
+
+.b-ball_i3{
+  top:0;
+  left:176px;
+  width:29px;
+  height:31px
+}
+
+.b-ball_i4{
+  top:0;
+  left:205px;
+  width:50px;
+  height:51px
+}
+
+.b-ball_i5{
+  top:0;
+  left:289px;
+  width:78px;
+  height:28px
+}
+
+.b-ball_i6{
+  top:0;
+  left:367px;
+  width:6px;
+  height:69px
+}
+
+.b-ball__i{
+  position:absolute;
+  width:100%;
+  height:100%;
+  transform-origin:50% 0;
+  transition:all .3s ease-in-out;
+  pointer-events:none
+}
+
+.b-ball_bounce .b-ball__right{
+  position:absolute;
+  top:0;
+  right:0;
+  left:50%;
+  bottom:0;
+  z-index:9
+}
+
+.b-ball_bounce:hover .b-ball__right{
+  display:none
+}
+
+.b-ball_bounce .b-ball__right:hover{
+  left:0;
+  display:block!important
+}
+
+.b-ball_bounce.bounce > .b-ball__i {
+  transform: rotate(-9deg);
+}
+
+.b-ball_bounce .b-ball__right.bounce + .b-ball__i {
+  transform: rotate(9deg);
+}
+
+.b-ball_bounce.bounce1 > .b-ball__i {
+  transform: rotate(6deg);
+}
+
+.b-ball_bounce .b-ball__right.bounce1 + .b-ball__i {
+  transform: rotate(-6deg);
+}
+
+.b-ball_bounce.bounce2 > .b-ball__i {
+  transform: rotate(-3deg);
+}
+
+.b-ball_bounce .b-ball__right.bounce2 + .b-ball__i {
+  transform: rotate(3deg);
+}
+
+.b-ball_bounce.bounce3 > .b-ball__i {
+  transform: rotate(1.5deg);
+}
+
+.b-ball_bounce .b-ball__right.bounce3 + .b-ball__i {
+  transform: rotate(-1.5deg);
+}
+
+#background-video {
+  position: fixed;
+  /* Hace que el video quede fijo al fondo */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  /* Ajusta el video para cubrir toda la pantalla sin distorsionarse */
+  z-index: -1;
+  /* Asegura que el contenido quede por encima del video */
 }
 
 .container {
@@ -617,11 +949,31 @@ body {
   /* Aumenta el tamaño de la fuente */
   line-height: 1.5;
   margin-top: 50px;
-  color: rgba(25, 8, 120, 0.866);
+  color: rgba(252, 251, 255, 0.871);
   font-weight: bold;
   /* Pone el texto en negrita */
   font-family: 'Bahnschrift', sans-serif;
   /* Cambia la fuente */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), 
+                 -2px -2px 4px rgba(0, 0, 0, 0.5), 
+                 2px -2px 4px rgba(0, 0, 0, 0.5),
+                 -2px 2px 4px rgba(0, 0, 0, 0.5);
+  /* Borde alrededor del texto */
+}
+
+h3 {
+  color: #ffffff;
+  /* Color del texto */
+  font-weight: bold;
+  /* Negrita */
+  /* text-transform: uppercase; */
+}
+
+h4 {
+  color: #ffffff;
+  font-weight: bold;
+  position: relative;
+  font-size: 25px;
 }
 
 h7 {
@@ -630,12 +982,29 @@ h7 {
   text-align: center;
 }
 
+.christmas-header {
+  /* Cambios navideños */
+  background-color: red;
+  /* Ejemplo */
+  color: green;
+  /* Ejemplo */
+  min-height: 70px;
+  color: #ffffff00;
+  /* Otros estilos navideños aquí */
+}
+
+.b-page_newyear {
+  display: none;
+  /* Ocultar el div por defecto */
+}
+
 header {
+  /* margin-bottom: 10px; */
   background: #0201298a;
   color: #fff;
   padding: 10px 20px;
   border-bottom: #77aaff 3px solid;
-  display: flex;
+  display: auto;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
@@ -676,16 +1045,32 @@ header a:hover {
 }
 
 .section {
-  border-bottom: 3px solid #0bffde;
   padding-bottom: 20px;
+  /* Espaciado inferior dentro de la sección */
   margin-bottom: 20px;
+  /* Espaciado fuera de la sección */
+  position: relative;
+  /* Necesario para colocar el pseudo-elemento */
 }
 
-.section:last-child {
-  border-bottom: none;
+/* Aplica el gradiente solo a las secciones que no sean la última */
+
+.section:not(:last-child)::after {
+  content: '';
+  /* Requiere este contenido vacío para el pseudo-elemento */
+  position: absolute;
+  bottom: 0;
+  /* Coloca la línea al fondo de la sección */
+  left: 0;
+  width: 100%;
+  /* Extiende la línea a todo lo largo de la sección */
+  height: 3px;
+  /* Grosor de la línea */
+  background: linear-gradient(to right, #ff007f, #00f2ff);
+  /* Línea con gradiente */
 }
 
-.section h2 {
+h2 {
   font-weight: bold;
   text-decoration: underline;
   margin-bottom: 10px;

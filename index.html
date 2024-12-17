@@ -2,6 +2,12 @@
 <!DOCTYPE html>
 <html lang="es">
 
+<video autoplay muted loop id="background-video">
+    <source src="/content/174043-850286839_medium.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,10 +16,289 @@
     <link href="https://fonts.googleapis.com/css2?family=Gill+Sans:wght@300&display=swap" rel="stylesheet">
     <link href="output.css" rel="stylesheet">
     <title>Presentación Profesional</title>
+    <style>
+        /* Estilo para el video de fondo */
+        #background-video {
+            position: fixed; /* Fija el video en la pantalla */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Hace que el video cubra toda la pantalla */
+            z-index: -1; /* Asegura que el video quede detrás del contenido */
+        }
+        .holiday-decoration {
+            position: absolute;
+            top: 10%;
+            right: 10%;
+            font-size: 3rem;
+            z-index: 2;
+        }
+        </style>
 </head>
 
+<script>
+    function toggleMenu() {
+        const nav = document.querySelector('header nav');
+        nav.classList.toggle('active');
+    }
+
+    window.onload = () => {
+        const month = new Date().getMonth();
+        const decorations = document.getElementById('holiday-decoration');
+        
+        if (month === 9) { // Octubre - Halloween
+            decorations.textContent = "🎃 Halloween 🎃";
+            decorations.classList.add('text-orange-500', 'font-bold');
+        } else if (month === 10) { // Diciembre - Navidad
+            decorations.textContent = "🎄 Navidad 🎄";
+            decorations.classList.add('text-green-500', 'font-bold');
+            //<![CDATA[
+                jQuery(function () {
+                var d = function () {};
+                jQuery(document).delegate(".b-ball_bounce", "mouseenter", function () {
+                    b(this);
+                    m(this)
+                }).delegate(".b-ball_bounce .b-ball__right", "mouseenter", function (i) {
+                    i.stopPropagation();
+                    b(this);
+                    m(this)
+                });
+
+                function f() {
+                    var i = "https://red-star.pro/demo/33/js/ny-2016.swf";
+                    i = i + "?nc=" + (new Date().getTime());
+                    swfobject.embedSWF(i, "z-audio__player", "1", "1", "9.0.0", null, {}, {
+                        allowScriptAccess: "always",
+                        hasPriority: "true"
+                    })
+                }
+                function h(i) {
+                        return document[i]
+                }
+                window.flashInited = function () {
+                    d = function (j) {
+                        try {
+                            h("z-audio__player").playSound(j)
+                        } catch (i) {}
+                    }
+                };
+                if (window.swfobject) {
+                    window.setTimeout(function () {
+                        jQuery("body").append('<div class="g-invisible"><div id="z-audio__player"></div></div>');
+                        f()
+                    }, 100)
+                }
+                var l = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "-", "=", "q", "w", "e", "r", "t", "y", "u", "i", "o", "p", "[", "]", "a", "s", "d", "f", "g", "h", "j", "k", "l", ";", "'", "\\"];
+                var k = ["z", "x", "c", "v", "b", "n", "m", ",", ".", "/"];
+                var g = 36;
+                var a = {};
+                for (var e = 0, c = l.length; e < c; e++) {
+                    a[l[e].charCodeAt(0)] = e
+                }
+                for (var e = 0, c = k.length; e < c; e++) {
+                    a[k[e].charCodeAt(0)] = e
+                }
+                jQuery(document).keypress(function (j) {
+                    var i = jQuery(j.target);
+                    if (!i.is("input") && j.which in a) {
+                        d(a[j.which])
+                    }
+                });
+
+                function b(n) {
+                    if (n.className.indexOf("b-ball__right") > -1) {
+                        n = n.parentNode
+                    }
+                    var i = /b-ball_n(\d+)/.exec(n.className);
+                    var j = /b-head-decor__inner_n(\d+)/.exec(n.parentNode.className);
+                    if (i && j) {
+                        i = parseInt(i[1], 10) - 1;
+                        j = parseInt(j[1], 10) - 1;
+                        d((i + j * 9) % g)
+                    }
+                }
+                function m(j) {
+                    var i = jQuery(j);
+                    if (j.className.indexOf(" bounce") > -1) {
+                        return
+                    }
+                    i.addClass("bounce");
+
+                    function n() {
+                        i.removeClass("bounce").addClass("bounce1");
+
+                        function o() {
+                            i.removeClass("bounce1").addClass("bounce2");
+
+                            function p() {
+                                i.removeClass("bounce2").addClass("bounce3");
+
+                                function q() {
+                                    i.removeClass("bounce3")
+                                }
+                                setTimeout(q, 300)
+                            }
+                            setTimeout(p, 300)
+                        }
+                        setTimeout(o, 300)
+                    }
+                    setTimeout(n, 300)
+                }
+            });
+        }
+    };
+ //]]>
+</script>
+
 <body>
-    
+    <!-- Video de fondo -->
+    <video autoplay muted loop id="background-video">
+        <source src="/content/174043-850286839_medium.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="b-page_newyear">
+        <div class="b-page__content">
+      
+            <i class="b-head-decor">
+            <i class="b-head-decor__inner b-head-decor__inner_n1">
+                <div class="b-ball b-ball_n1 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_n2 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_n3 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_n4 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_n5 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_n6 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_n7 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+      
+                <div class="b-ball b-ball_n8 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_n9 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_i1"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_i2"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_i3"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_i4"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_i5"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_i6"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+            </i>
+      
+            <i class="b-head-decor__inner b-head-decor__inner_n2">
+                <div class="b-ball b-ball_n1 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_n2 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_n3 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_n4 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_n5 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_n6 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_n7 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_n8 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+      
+                <div class="b-ball b-ball_n9 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_i1"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_i2"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_i3"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_i4"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_i5"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_i6"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+            </i>
+            <i class="b-head-decor__inner b-head-decor__inner_n3">
+      
+                <div class="b-ball b-ball_n1 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_n2 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_n3 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_n4 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_n5 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_n6 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_n7 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_n8 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_n9 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+      
+                <div class="b-ball b-ball_i1"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_i2"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_i3"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_i4"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_i5"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_i6"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+            </i>
+            <i class="b-head-decor__inner b-head-decor__inner_n4">
+                <div class="b-ball b-ball_n1 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+      
+                <div class="b-ball b-ball_n2 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_n3 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_n4 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_n5 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_n6 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_n7 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_n8 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_n9 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_i1"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+      
+                <div class="b-ball b-ball_i2"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_i3"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_i4"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_i5"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_i6"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+            </i>
+            <i class="b-head-decor__inner b-head-decor__inner_n5">
+                <div class="b-ball b-ball_n1 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_n2 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+      
+                <div class="b-ball b-ball_n3 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_n4 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_n5 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_n6 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_n7 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_n8 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_n9 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_i1"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_i2"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+      
+                <div class="b-ball b-ball_i3"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_i4"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_i5"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_i6"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+            </i>
+            <i class="b-head-decor__inner b-head-decor__inner_n6">
+                <div class="b-ball b-ball_n1 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_n2 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_n3 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+      
+                <div class="b-ball b-ball_n4 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_n5 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_n6 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_n7 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_n8 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_n9 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_i1"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_i2"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_i3"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+      
+                <div class="b-ball b-ball_i4"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_i5"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_i6"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+            </i>
+            <i class="b-head-decor__inner b-head-decor__inner_n7">
+                <div class="b-ball b-ball_n1 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_n2 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_n3 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_n4 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+      
+                <div class="b-ball b-ball_n5 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_n6 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_n7 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_n8 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_n9 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_i1"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_i2"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_i3"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_i4"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+      
+                <div class="b-ball b-ball_i5"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+                <div class="b-ball b-ball_i6"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+            </i>
+        </i>
+      
+      </div>
+    </div>
+
     <header>
         <div id="branding">
             <img src="logoNGMFormal_sinF.png" alt="Logo" id="logo">
@@ -35,29 +320,26 @@
         </nav>
     </header>
     
+    <script src="./script.js"></script>    
     
-    <script>
-        function toggleMenu() {
-            const nav = document.querySelector('header nav');
-            nav.classList.toggle('active');
-        }
-    </script>
-    
-    
+    <!-- <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js' type='text/javascript'></script> -->
 
     <section class="showcase">
         <div class="container">
             <h1>Bienvenido a mi Página de Presentación</h1>
-            <p>Me llamo Nicolás Gómez y actualmente estoy estudiando Ingeniería Civil en Informática. He creado esta página para darme a conocer y demostrar mi compromiso con los proyectos en los que participo.</p>
+            <p>Me llamo Nicolás Gómez M. y actualmente estoy estudiando Ingeniería Civil en Informática. He creado esta página para darme a conocer y demostrar mi compromiso con los proyectos en los que participo.</p>
         </div>
     </section>
+
+    <!-- Sección con decoraciones de temporada -->
+    <!-- <div id="holiday-decoration" class="holiday-decoration"></div> -->
 
     <div class="container">
         <section id="skills" class="section">
             <h2>Habilidades</h2>
             <ul>
-                <li>Programación en C, C++ y Python</li>
-                <li>Desarrollo web con HTML y CSS</li>
+                <li>Programación en C, C++, Python, JavaScript, Java, SQL y Python </li>
+                <li>Desarrollo web con HTML, CSS, JSX y React</li>
                 <li>Gestión de bases de datos en PostgreSQL y Oracle</li>
                 <li>Desarrollo de informes utilizando el lenguaje LaTeX</li>
                 <li>Experiencia en manejo de datos a través de las herramientas Git y GitHub</li>
@@ -68,17 +350,21 @@
                 <li>Fuerte habilidad para trabajar en equipo y comunicación efectiva</li>
                 <li><a href="Certificado.pdf" target="_blank" class="no-style-link">Certificación</a> en Administración y atención al Cliente</li>
             </ul>
-            Como estudiante de la Universidad del Bio Bio, he completado más del 50% de mi <a href="MallaIcinf.png" target="_blank" class="no-style-link">malla curricular</a> . Por lo tanto, puedo afirmar que tengo un manejo básico de las materias detalladas en la siguiente imagen hasta el séptimo semestre:
+            <p style="text-align: justify;">
+                Como estudiante de la Universidad del Bio Bio, he completado más del 50% de mi 
+                <a href="MallaIcinf.png" target="_blank" class="no-style-link">malla curricular</a>. 
+                Por lo tanto, puedo afirmar que tengo un manejo básico de las materias detalladas en la imagen adjunta hasta el octavo semestre.
+            </p>
             
-            <div style="margin-top: 20px;"></div>
+            <!-- <div style="margin-top: 20px;"></div> -->
 
-            <img src="MallaIcinf.png" alt="Malla Curricular" class="responsive-image">
+            <!-- <img src="MallaIcinf.png" alt="Malla Curricular" class="responsive-image"> -->
         </section>
     
         <section id="experience" class="section">
             <h2>Experiencia Laboral</h2>
             <div class="experience">
-                <h3>Practicante en Laboratorio CIMUBB</h3>
+                <h4>Practicante en Laboratorio CIMUBB</h4>
                 <p>Junio 2023 - Diciembre 2023</p>
                 <p>Responsabilidades:</p>
                 <ul>
@@ -89,7 +375,7 @@
                 </ul>
             </div>
             <div class="experience">
-                <h3>Desarrollador Proyecto Particular Laboratorio CIMUBB</h3>
+                <h4>Desarrollador Proyecto Particular Laboratorio CIMUBB</h4>
                 <p>Diciembre 2023 - Agosto 2024</p>
                 <p>Responsabilidades:</p>
                 <ul>
@@ -102,7 +388,7 @@
                 </ul>
             </div>
             <div class="experience">
-                <h3>Técnico en hardware</h3>
+                <h4>Técnico en hardware</h4>
                 <p>Diciembre 2020 - Actualidad</p>
                 <p>Responsabilidades:</p>
                 <ul>
