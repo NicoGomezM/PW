@@ -39,8 +39,8 @@
 
 <script>
     function toggleMenu() {
-        const nav = document.querySelector('header nav');
-        nav.classList.toggle('active');
+        const navMenu = document.getElementById("navMenu"); 
+        navMenu.classList.toggle("open"); // Alterna la visibilidad del menú
     }
 
     window.onload = () => {
@@ -154,7 +154,7 @@
 <body>
     <!-- Video de fondo -->
     <video autoplay muted loop id="background-video">
-        <source src="./content/174043-850286839_medium.mp4" type="video/mp4">
+        <source src="./content/80645-572367655_medium.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
 
@@ -309,7 +309,7 @@
             <div></div>
             <div></div>
         </div>
-        <nav class="nav">
+        <nav id="navMenu" class="nav">
             <ul>
                 <li><a href="#skills">Habilidades</a></li>
                 <li><a href="#experience">Experiencia</a></li>
@@ -317,19 +317,31 @@
                 <li><a href="#curriculums">Curriculums</a></li>
                 <li><a href="#contact">Contacto</a></li>
             </ul>
+            <button id="closeMenu" class="close-menu" onclick="toggleMenu()"><span style="color: red;">Cerrar</span></button> <!-- Botón para cerrar el menú -->
         </nav>
     </header>
     
     <script src="./script.js"></script>    
+
     
     <!-- <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js' type='text/javascript'></script> -->
 
+    <div classname="svg-container">
+        
+        
+    </div>
+    
     <section class="showcase">
         <div class="container">
-            <h1>Bienvenido a mi Página de Presentación</h1>
-            <p>Me llamo Nicolás Gómez M. y actualmente estoy estudiando Ingeniería Civil en Informática. He creado esta página para darme a conocer y demostrar mi compromiso con los proyectos en los que participo.</p>
+            <img id="october-svg-left" class="img-svg-halloween1" src="./content/undraw_halloween_q1b1.svg" alt="">
+            <div class="text-content">
+                <h1>Bienvenido a mi Página de Presentación</h1>
+                <p>Me llamo Nicolás Gómez M. y actualmente estoy estudiando Ingeniería Civil en Informática. He creado esta página para darme a conocer y demostrar mi compromiso con los proyectos en los que participo.</p>
+            </div>
+            <img id="october-svg-right" class="img-svg-halloween2" src="./" alt=""> 
         </div>
     </section>
+    
 
     <!-- Sección con decoraciones de temporada -->
     <!-- <div id="holiday-decoration" class="holiday-decoration"></div> -->
@@ -348,11 +360,11 @@
                 <li>Habilidad en el uso de herramientas de ofimática como Word, Excel y PowerPoint</li>
                 <li>Capacidad para realizar reparaciones y mejoras en elementos de hardware</li>
                 <li>Fuerte habilidad para trabajar en equipo y comunicación efectiva</li>
-                <li><a href="Certificado.pdf" target="_blank" class="no-style-link">Certificación</a> en Administración y atención al Cliente</li>
+                <li><a href="./content/Certificado.pdf" target="_blank" class="no-style-link">Certificación</a> en Administración y atención al Cliente</li>
             </ul>
             <p style="text-align: justify;">
                 Como estudiante de la Universidad del Bio Bio, he completado más del 50% de mi 
-                <a href="MallaIcinf.png" target="_blank" class="no-style-link">malla curricular</a>. 
+                <a href="./content/MallaIcinf.png" target="_blank" class="no-style-link">malla curricular</a>. 
                 Por lo tanto, puedo afirmar que tengo un manejo básico de las materias detalladas en la imagen adjunta hasta el octavo semestre.
             </p>
             
@@ -455,5 +467,28 @@
         </section>
     </div>
 </body>
+
+
+<script>
+    const currentDate = new Date();
+    const currentMonth = currentDate.getMonth(); // 0 = enero, 1 = febrero, ..., 9 = octubre
+
+    // Selecciona el SVG que quieres mostrar/ocultar
+    const octoberSvg = document.getElementById('october-svg-left');
+    const octoberSvg2 = document.getElementById('october-svg-right');
+
+    console.log('Mes actual:', currentMonth);
+    console.log('SVG:', octoberSvg);
+    console.log('SVG2:', octoberSvg2);
+    // Verifica si el mes actual es octubre (mes 9 en JavaScript)
+    if (currentMonth === 9) {  // Octubre es el mes 9 en JavaScript (basado en 0)
+            console.log('Es octubre');
+            octoberSvg.style.display = 'block'; // Muestra el SVG
+            octoberSvg2.style.display = 'block'; 
+    } else {
+            octoberSvg.style.display = 'none'; // Oculta el SVG
+            octoberSvg2.style.display = 'none'; 
+    }
+</script>
 
 </html>

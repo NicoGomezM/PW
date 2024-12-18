@@ -596,6 +596,10 @@ video {
   position: absolute;
 }
 
+.block {
+  display: block;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -938,7 +942,7 @@ body {
 
 .container {
   font-size: 20px;
-  width: 80%;
+  width: 100%;
   margin: auto;
   overflow: hidden;
   color: #ffffff;
@@ -959,6 +963,7 @@ body {
                  2px -2px 4px rgba(0, 0, 0, 0.5),
                  -2px 2px 4px rgba(0, 0, 0, 0.5);
   /* Borde alrededor del texto */
+  flex: 1;
 }
 
 h3 {
@@ -999,7 +1004,7 @@ h7 {
 }
 
 header {
-  display: flex;
+  /* display: flex; */
   justify-content: space-between;
   /* Espacio entre los elementos del header */
   align-items: center;
@@ -1035,13 +1040,29 @@ header a:hover {
 }
 
 .showcase {
-  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  color: #ffffff;
+  height: 100%;
+  /* Asegura que la sección ocupe toda la pantalla */
+  width: 100%;
+  background-color: #11111100;
+  /* Fondo oscuro para contraste */
+}
+
+.showcase .container {
+  display: flex;
+  justify-content: space-between;
+  /* Alinea las imágenes a la izquierda y derecha */
+  align-items: center;
+  /* Centra verticalmente los elementos */
+  padding: 20px;
 }
 
 .container p {
   font-size: 20px;
+  flex: 1;
 }
 
 .section {
@@ -1200,8 +1221,9 @@ nav ul {
   padding: 0;
 }
 
-nav li {
-  display: inline;
+nav ul li {
+  margin-left: 20px;
+  /* Espacio entre los elementos de la lista */
 }
 
 nav a {
@@ -1221,11 +1243,13 @@ nav a:hover {
   flex-direction: column;
   gap: 5px;
   cursor: pointer;
+  /* margin-left: 500px; */
+  align-items: end;
 }
 
 .hamburger div {
-  width: 25px;
-  height: 3px;
+  width: 30px;
+  height: 5px;
   background-color: #fff;
 }
 
@@ -1248,6 +1272,16 @@ nav a:hover {
   /* Ajusta los íconos a una nueva línea si es necesario */
 }
 
+.close-menu {
+  display: none;
+  /* Ocultamos el botón por defecto */
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
 .contact-info img {
   margin-top: 10px;
   width: 32px;
@@ -1256,6 +1290,23 @@ nav a:hover {
   /* Mantiene la proporción */
   cursor: pointer;
   /* Cambia el cursor a una mano al pasar sobre los íconos */
+}
+
+.svg-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+  /* espacio entre las imágenes y el texto */
+}
+
+.img-svg-halloween1,
+.img-svg-halloween2 {
+  width: 40%;
+  /* Ajusta el tamaño de las imágenes */
+  max-width: 150px;
+  /* Limita el tamaño máximo */
 }
 
 @media (max-width: 768px) {
@@ -1279,9 +1330,19 @@ nav a:hover {
     display: flex;
   }
 
+  nav.open {
+    display: flex;
+    /* Mostramos el menú cuando se abre */
+  }
+
+  .close-menu {
+    display: block;
+    /* Mostramos el botón para cerrar el menú */
+  }
+
   nav ul {
     flex-direction: column;
-    gap: 10px;
+    /* Los enlaces se mostrarán en columna */
   }
 
   nav li {
